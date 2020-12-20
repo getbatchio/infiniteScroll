@@ -11,7 +11,7 @@ let initalLoad = true;
 let count = 5;
 let query = 'tree';
 const apiKey = 'z3r0sZurEcXwWqDjN6kAl6XmthXeRtrVw_UOogjOSnY';
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=&{query}`;
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=${query}`;
 
 // Check if all images were loaded
 function imageLoaded() {
@@ -20,7 +20,7 @@ function imageLoaded() {
     ready = true;
     loader.hidden = true;
     count = 10;
-    apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}`;
+    apiUrl = `https://api.unsplash.com/photos/random?client_id=${apiKey}&count=${count}&query=${query}`;
   }
 }
 // Helper Function to Set Attributes on DOM Elements
