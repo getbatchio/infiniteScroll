@@ -9,8 +9,9 @@ let initalLoad = true;
 
 // Unsplash API
 let count = 5;
+let query = 'tree';
 const apiKey = 'z3r0sZurEcXwWqDjN6kAl6XmthXeRtrVw_UOogjOSnY';
-let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+let apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}&query=&{query}`;
 
 // Check if all images were loaded
 function imageLoaded() {
